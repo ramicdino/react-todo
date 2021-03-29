@@ -1,0 +1,56 @@
+@import "./add-todo";
+@import "./todos";
+@import "./todo";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #de6262;
+  background: -webkit-linear-gradient(to left, #ffb88c, #de6262);
+  background: linear-gradient(to left, #ffb88c, #de6262);
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(rgba(255, 255, 255, 0.1), 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    color: white;
+    overflow-y: scroll;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #de6262;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    margin: 1rem;
+    .container {
+      width: 100%;
+    }
+  }
+}

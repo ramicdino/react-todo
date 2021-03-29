@@ -1,0 +1,42 @@
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  user-select: none;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  small {
+    font-weight: 200;
+  }
+
+  button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: color 0.35s ease;
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &:focus,
+    &:active {
+      border: 0;
+      outline: 0;
+    }
+  }
+}
+
+.reminder {
+  border-bottom: 0.25rem solid rgba(65, 245, 65, 0.5);
+}
